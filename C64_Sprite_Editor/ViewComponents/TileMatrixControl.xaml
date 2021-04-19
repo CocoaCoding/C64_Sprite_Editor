@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="C64_Sprite_Editor.ViewComponents.TileMatrix"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Components="clr-namespace:C64_Sprite_Editor.ViewComponents"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Components:TileRowControl x:Name="row0" Grid.Row="0"/>
+        <Components:TileRowControl x:Name="row1" Grid.Row="1"/>
+        <Components:TileRowControl x:Name="row2" Grid.Row="2"/>
+        <Components:TileRowControl x:Name="row3" Grid.Row="3"/>
+        <Components:TileRowControl x:Name="row4" Grid.Row="4"/>
+        <Components:TileRowControl x:Name="row5" Grid.Row="5"/>
+        <Components:TileRowControl x:Name="row6" Grid.Row="6"/>
+        <Components:TileRowControl x:Name="row7" Grid.Row="7"/>
+        <Components:TileRowControl x:Name="row8" Grid.Row="8"/>
+        <Components:TileRowControl x:Name="row9" Grid.Row="9"/>
+        <Components:TileRowControl x:Name="row10" Grid.Row="10"/>
+        <Components:TileRowControl x:Name="row11" Grid.Row="11"/>
+        <Components:TileRowControl x:Name="row12" Grid.Row="12"/>
+        <Components:TileRowControl x:Name="row13" Grid.Row="13"/>
+        <Components:TileRowControl x:Name="row14" Grid.Row="14"/>
+        <Components:TileRowControl x:Name="row15" Grid.Row="15"/>
+        <Components:TileRowControl x:Name="row16" Grid.Row="16"/>
+        <Components:TileRowControl x:Name="row17" Grid.Row="17"/>
+        <Components:TileRowControl x:Name="row18" Grid.Row="18"/>
+        <Components:TileRowControl x:Name="row19" Grid.Row="19"/>
+        <Components:TileRowControl x:Name="row20" Grid.Row="20"/>
+
+    </Grid>
+</UserControl>

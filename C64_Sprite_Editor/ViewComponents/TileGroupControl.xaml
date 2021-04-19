@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="C64_Sprite_Editor.ViewComponents.TileGroupControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Components="clr-namespace:C64_Sprite_Editor.ViewComponents"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="240">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Components:TileControl Grid.Column="0" x:Name="tile0"/>
+        <Components:TileControl  Grid.Column="1" x:Name="tile1"/>
+        <Components:TileControl Grid.Column="2"  x:Name="tile2"/>
+        <Components:TileControl Grid.Column="3" x:Name="tile3"/>
+        <Components:TileControl Grid.Column="4" x:Name="tile4"/>
+        <Components:TileControl Grid.Column="5" x:Name="tile5"/>
+        <Components:TileControl Grid.Column="6" x:Name="tile6"/>
+        <Components:TileControl Grid.Column="7" x:Name="tile7"/>
+    </Grid>
+</UserControl>

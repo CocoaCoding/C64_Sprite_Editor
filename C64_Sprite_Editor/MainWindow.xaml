@@ -1,0 +1,26 @@
+﻿<Window x:Class="C64_Sprite_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Components="clr-namespace:C64_Sprite_Editor.ViewComponents"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="C64 Sprite Editor" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <!--Später Menü-->
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        
+        <Components:TileMatrix 
+            Grid.Row="1"
+            VerticalAlignment="Top" HorizontalAlignment="Left"
+            x:Name="spriteMatrix" Height="400" Width="400" MouseDown="OnSpriteMatrixMouseDown"/>
+
+        <TextBox Grid.Row="2" x:Name="dataTextBox" TextWrapping="Wrap"/>
+
+    </Grid>
+</Window>
