@@ -6,21 +6,41 @@
         xmlns:Components="clr-namespace:C64_Sprite_Editor.ViewComponents"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="C64 Sprite Editor" Height="600" Width="800">
+        Title="C64 Sprite Editor" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <!--Später Menü-->
             <RowDefinition Height="*"/>
-            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
         <Components:TileMatrix 
-            Grid.Row="1"
+            Grid.Row="1" Grid.Column="0"
             VerticalAlignment="Top" HorizontalAlignment="Left"
             x:Name="spriteMatrix" Height="400" Width="400" MouseDown="OnSpriteMatrixMouseDown"/>
 
-        <TextBox Grid.Row="2" x:Name="dataTextBox" TextWrapping="Wrap"/>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" Margin="15,0,15,0">
+            <StackPanel Orientation="Horizontal">
 
+                <StackPanel>
+                    <Label>Start line number</Label>
+                    <TextBox x:Name="linenumberTextBox" Width="100" HorizontalAlignment="Left"/>
+                </StackPanel>
+
+                <StackPanel Margin="10,0,0,0">
+                    <Label>line number increment</Label>
+                    <TextBox x:Name="linenumberIncrementTextBox" Width="100" HorizontalAlignment="Left"/>
+                </StackPanel>
+            </StackPanel>
+
+            <Label>Generated code</Label>
+            <TextBox  x:Name="dataTextBox" TextWrapping="Wrap"/>
+            <Button Margin="0,5,0,0" HorizontalAlignment="Right" Width="160">Copy code to pasteboard</Button>
+        </StackPanel>
+        
     </Grid>
 </Window>
